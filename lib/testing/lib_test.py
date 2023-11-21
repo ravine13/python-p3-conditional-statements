@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from control_flow import admin_login, hows_the_weather, fizzbuzz, calculator
+from ..control_flow import admin_login, hows_the_weather, fizzbuzz, calculator
 
 import io
 import sys
@@ -101,4 +101,4 @@ class TestCalculator:
         sys.stdout = captured_out
         assert(calculator('a', 1, 2) == None)
         sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Invalid operation!\n")
+        assert(captured_out.getvalue() == "Invalid operation!")
